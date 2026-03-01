@@ -699,7 +699,7 @@ function App() {
               <div className="pointer-events-none absolute left-[9%] right-[9%] top-6.75 h-0.75 bg-[linear-gradient(90deg,rgba(20,184,166,0.46),rgba(59,130,246,0.58))] max-[1080px]:hidden"></div>
               {processSteps.map((step, index) => (
                 <article key={step.title} className="relative z-1 text-center">
-                  <div className="mx-auto mb-3 grid h-13.5 w-13.5 place-items-center rounded-full border-4 border-[#eef5ff] bg-[linear-gradient(120deg,#0f766e_0%,#1d4ed8_54%,#0ea5e9_100%)] font-['Space_Grotesk'] text-base font-bold text-[#f9feff] shadow-[0_10px_22px_rgba(16,62,121,0.26)]">
+                  <div className="mx-auto mb-3 grid h-13.5 w-13.5 place-items-center rounded-full border-4 border-[#d6fbe4] bg-[#25D366] font-['Space_Grotesk'] text-base font-bold text-white shadow-[0_10px_22px_rgba(37,211,102,0.32)]">
                     {index + 1}
                   </div>
                   <h3 className="mb-2.5 font-['Space_Grotesk'] text-[1.03rem] font-semibold text-[#152439]">
