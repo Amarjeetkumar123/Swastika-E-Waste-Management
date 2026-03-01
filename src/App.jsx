@@ -54,32 +54,32 @@ const categoryTiles = [
 const serviceCards = [
   {
     title: "Electrical & Electronic",
-    text: "Hazardous materials like lead, mercury, and cadmium are safely dismantled and recycled through compliant processes.",
+    text: "Hazardous materials such as lead, mercury, and cadmium can leach into soil and water, causing pollution and harm to wildlife. Proper recycling ensures these toxins are safely extracted and processed.",
     image: serviceElectricalImage,
   },
   {
     title: "Hard Disk Shredding",
-    text: "Certified data destruction with physical shredding ensures secure and irreversible disposal of storage devices.",
+    text: "When it comes to ensuring that sensitive data is securely destroyed and electronics are disposed of properly, our hard disk shredding service provides complete peace of mind. We physically destroy hard drives to ensure no data can ever be recovered.",
     image: serviceHardDiskImage,
   },
   {
-    title: "IT Asset Disposition",
-    text: "End-to-end ITAD services covering assessment, reuse, resale, and responsible recycling for maximum asset value.",
+    title: "IT Asset Disposition (ITAD)",
+    text: "An assessment of the IT assets is conducted to determine their value, condition, and whether they can be reused, recycled, or sold. Our ITAD service ensures compliance with environmental regulations while maximizing asset recovery value.",
     image: serviceItadImage,
   },
   {
     title: "Batteries",
-    text: "Safe battery collection and treatment prevents landfill contamination and recovers reusable material efficiently.",
+    text: "When batteries are disposed of in landfills or incinerators, they contribute to the growing problem of e-waste, which is becoming a global challenge. Our battery recycling program safely processes all battery types to recover valuable materials.",
     image: serviceBatteryImage,
   },
   {
     title: "Cables Recycling",
-    text: "Recovery of copper, aluminum, and other valuable materials from all common industrial and consumer cable types.",
+    text: "Cables, including those used in electrical, telecommunications, and electronic devices, often contain valuable metals like copper, aluminum, and other components that can be recycled for reuse.",
     image: serviceCableImage,
   },
   {
     title: "Door to Door Recycling",
-    text: "Convenient pickup of paper, plastic, metal, glass, and electronics from homes, campuses, and offices.",
+    text: "This service is offered as part of our effort to reduce waste and promote recycling directly from your premises. We collect paper, plastic, metal, glass, and electronics.",
     image: serviceDoorImage,
   },
 ];
@@ -107,51 +107,51 @@ const statCards = [
     value: 5,
     decimals: 0,
     suffix: "th",
-    label: "Largest E-Waste Producer",
+    label: "India: 5th Largest E-Waste Producer Globally",
   },
   {
     icon: "fa-solid fa-recycle",
     value: 2,
     decimals: 0,
     suffix: "M Tonnes",
-    label: "Annual Indian E-Waste",
+    label: "2 Million Tonnes of E-Waste Generated Annually in India",
   },
   {
     icon: "fa-solid fa-chart-line",
     value: 30,
     decimals: 0,
     suffix: "%",
-    label: "CAGR Growth Rate",
+    label: "30% CAGR Growth in Indian E-Waste (ASSOCHAM)",
   },
   {
     icon: "fa-solid fa-industry",
     value: 5.2,
     decimals: 1,
     suffix: "M Tonnes",
-    label: "Projected by 2020",
+    label: "5.2 Million Tonnes Projected by 2020",
   },
 ];
 
 const processSteps = [
   {
     title: "Collection",
-    text: "Scheduled pickup from homes, institutions, and businesses.",
+    text: "We collect e-waste directly from your home, office, or facility through our door-to-door pickup service or at designated drop-off points.",
   },
   {
     title: "Sorting & Assessment",
-    text: "Devices are sorted and assessed for reuse, refurbishment, or recovery.",
+    text: "All collected items are sorted and assessed for reuse potential, resale value, or recycling suitability.",
   },
   {
     title: "Data Destruction",
-    text: "Secure destruction protocols protect sensitive business and personal data.",
+    text: "Sensitive data on all devices is securely wiped or physically destroyed in compliance with data protection regulations.",
   },
   {
     title: "Recycling & Disposal",
-    text: "Certified treatment with eco-safe processing and controlled disposal.",
+    text: "Materials are processed using environmentally safe methods. Hazardous components are segregated and handled by certified experts.",
   },
   {
     title: "Reporting & Certification",
-    text: "Transparent reporting and compliance-ready documentation for clients.",
+    text: "Clients receive a certificate of responsible disposal and a detailed report of assets processed.",
   },
 ];
 
@@ -379,12 +379,26 @@ function App() {
                 SWASTIKA - RECYCLE TODAY, PROTECT TOMORROW
               </p>
               <h1 className="mb-6 max-w-212.5 text-[clamp(2.4rem,5vw,4.2rem)] leading-[1.15] font-bold text-white drop-shadow-[0_8px_20px_rgba(2,8,18,0.6)]">
-                Give Your E-Waste a Second Life
-                <br />
-                <span>for a Sustainable Tomorrow</span>
+                Give Your E-Waste a Second Life - Recycle for a Sustainable
+                Tomorrow!
               </h1>
               <p className="mb-8 max-w-screen-sm text-[1.15rem] leading-[1.7] text-white/95 drop-shadow-[0_6px_14px_rgba(2,8,18,0.55)]">
                 Responsible E-Waste Management for a Greener Future!
+              </p>
+              <p className="mb-4 max-w-screen-md text-[1rem] leading-[1.72] text-white/92 drop-shadow-[0_6px_14px_rgba(2,8,18,0.5)]">
+                At Swastika e-Waste, we are dedicated to addressing the
+                growing challenge of electronic waste by providing safe,
+                efficient, and environmentally responsible recycling solutions.
+                As one of India&apos;s leading e-waste management companies, we
+                believe that every discarded electronic device holds the
+                potential to be repurposed or recycled.
+              </p>
+              <p className="mb-8 max-w-screen-md text-[0.96rem] leading-[1.7] text-white/85 drop-shadow-[0_6px_14px_rgba(2,8,18,0.5)]">
+                According to ASSOCHAM, an industrial body in India, the
+                Compound Annual Growth Rate (CAGR) of electronic waste is 30%.
+                With changing consumer behavior and rapid economic growth,
+                ASSOCHAM estimates that India will generate 5.2 million tonnes
+                of e-waste by 2020.
               </p>
               <div className="flex flex-wrap gap-4 items-center max-[680px]:flex-col">
                 <a
@@ -481,8 +495,13 @@ function App() {
                 <p className={`${bodyTextClass} mb-4`}>
                   Did you know that millions of broken phones, laptops, and
                   gadgets are just sitting in drawers or, worse, ending up in
-                  landfills each year? Swastika helps you dispose of old devices
-                  responsibly while recovering valuable materials.
+                  landfills each year? We often don&apos;t think twice about
+                  tossing old electronics, but the impact is huge.
+                </p>
+                <p className={`${bodyTextClass} mb-4`}>
+                  When these devices are dumped, they release toxic chemicals
+                  into the environment. Swastika helps you dispose of old
+                  devices responsibly while recovering valuable materials.
                 </p>
                 <a href="#services" className={`${primaryButtonClass} ${smallButtonClass}`}>
                   Read More
@@ -499,8 +518,9 @@ function App() {
               <h2 className={sectionTitleClass}>Services</h2>
               <p className={bodyTextClass}>
                 Broken Devices? Don&apos;t Dump &apos;Em - Recycle for a Greener
-                Future! We offer a variety of ITAD and e-waste recycling
-                services.
+                Future! We offer a variety of IT asset disposition (ITAD) and
+                e-waste recycling services ranging from Data Sanitization, Asset
+                Recovery to Refurbishing and Safe Disposal.
               </p>
             </div>
 
@@ -542,9 +562,13 @@ function App() {
         </section>
 
         <section className="reveal overflow-hidden bg-linear-to-r from-lime-50/50 to-lime-50/50 py-10">
-          <p className="mb-6 text-center font-['Space_Grotesk'] text-[0.96rem] font-bold uppercase tracking-[0.08em] text-[#0f172a]">
-            Items Accepted by Swastika
-          </p>
+          <div className={`${containerClass} mb-8 text-center`}>
+            <p className={sectionKickerClass}>Accepted Items</p>
+            <h2 className={`${sectionTitleClass} mb-3`}>What We Accept</h2>
+            <p className="m-0 text-[1rem] leading-[1.7] text-[#475569]">
+              We recycle a wide range of electronic devices, including:
+            </p>
+          </div>
           <div className="w-full overflow-hidden">
             <div className="marquee-track flex w-max items-center gap-5">
               {[...acceptedItems, ...acceptedItems].map((item, index) => (
@@ -566,11 +590,12 @@ function App() {
               <p className={sectionKickerClass}>Why Choose Swastika</p>
               <h2 className={sectionTitleClass}>How Can We Help You Today?</h2>
               <p className={bodyTextClass}>
-                India is among the world&apos;s top e-waste producing countries,
-                and organizations need trusted recycling partners to stay
-                compliant and sustainable. Swastika provides audited, secure,
-                and eco-conscious services that reduce environmental impact
-                while improving material recovery.
+                India is the fifth largest electronic waste producer in the
+                world. Approximately 2 million tonnes of e-waste are generated
+                annually, and an undisclosed amount of e-waste is imported from
+                other countries around the world. Swastika provides a
+                comprehensive, end-to-end solution to responsibly manage this
+                challenge.
               </p>
             </div>
 
@@ -609,17 +634,38 @@ function App() {
               <p className={sectionKickerClass}>Cables Recycling</p>
               <h2 className={sectionTitleClass}>Cables Recycling</h2>
               <p className={bodyTextClass}>
-                Swastika recovers high-value metals from cable waste through
-                controlled and environmentally responsible methods. Our
-                collection and processing workflow handles mixed cable streams
-                from industrial and commercial sources.
+                Cables, including those used in electrical,
+                telecommunications, and electronic devices, often contain
+                valuable metals like copper, aluminum, and other components
+                that can be recycled for reuse.
+              </p>
+              <p className="mb-2 font-['Space_Grotesk'] text-[0.94rem] font-semibold text-[#0f172a]">
+                Types of cables we recycle:
               </p>
               <ul className="custom-list">
-                <li>Copper Cables</li>
-                <li>Aluminum Cables</li>
-                <li>Fiber Optic Cables</li>
-                <li>Coaxial Cables</li>
-                <li>Power Cords</li>
+                <li>
+                  <strong>Copper Cables:</strong> Found in most electrical
+                  wiring, telecom cables, and electronic devices.
+                </li>
+                <li>
+                  <strong>Aluminum Cables:</strong> Common in power
+                  transmission lines, some electrical wiring, and
+                  telecommunication cables.
+                </li>
+                <li>
+                  <strong>Fiber Optic Cables:</strong> Used for high-speed
+                  internet and communication; contain glass and sometimes
+                  metals.
+                </li>
+                <li>
+                  <strong>Coaxial Cables:</strong> Used in TV and internet
+                  connections; contain a mixture of copper, aluminum, and
+                  plastic.
+                </li>
+                <li>
+                  <strong>Power Cords:</strong> Found in household appliances
+                  and electronics; recycled for copper and plastic content.
+                </li>
               </ul>
             </div>
           </div>
@@ -639,17 +685,33 @@ function App() {
               <p className={sectionKickerClass}>Door to Door Recycling</p>
               <h2 className={sectionTitleClass}>Door to Door Recycling</h2>
               <p className={bodyTextClass}>
-                Our door-to-door recycling service simplifies responsible
-                disposal by collecting reusable and recyclable materials from
-                your doorstep. We help homes, offices, and institutions keep
-                waste out of landfills through scheduled pickups.
+                This service is offered as part of our effort to reduce waste
+                and promote recycling directly from your premises.
+              </p>
+              <p className="mb-2 font-['Space_Grotesk'] text-[0.94rem] font-semibold text-[#0f172a]">
+                We collect:
               </p>
               <ul className="custom-list">
-                <li>Paper</li>
-                <li>Plastic</li>
-                <li>Metal</li>
-                <li>Glass</li>
-                <li>Electronics</li>
+                <li>
+                  <strong>Paper:</strong> Newspapers, magazines, office paper,
+                  cardboard boxes.
+                </li>
+                <li>
+                  <strong>Plastic:</strong> Bottles, containers, bags, and
+                  other plastic items.
+                </li>
+                <li>
+                  <strong>Metal:</strong> Aluminum cans, steel cans, and other
+                  metal containers.
+                </li>
+                <li>
+                  <strong>Glass:</strong> Bottles, jars, and other glass
+                  containers.
+                </li>
+                <li>
+                  <strong>Electronics:</strong> Old phones, computers, cables,
+                  and small devices.
+                </li>
               </ul>
             </div>
           </div>
@@ -665,10 +727,18 @@ function App() {
             <p className={`${sectionKickerClass} text-[#f1f9ff]`}>Trusted ITAD Partner</p>
             <h2 className={`${sectionTitleClass} text-[#f1f9ff]`}>Corporate and Government Offices</h2>
             <p className={`${bodyTextClass} text-[#f1f9ff]`}>
-              Outdated electronics can expose organizations to data risk and
-              compliance penalties. Swastika supports corporate and government
-              offices with secure IT asset disposition, audited destruction
-              workflows, and regulatory-ready reporting.
+              From small businesses to large corporations, government offices,
+              and healthcare centers, the disposition of IT equipment can be
+              complicated and risky. Workstations to large data centers,
+              medical equipment and all their replacement parts, handheld
+              devices, smartphones, and any other IT equipment being
+              decommissioned can pose data security risks and environmental
+              hazards.
+            </p>
+            <p className={`${bodyTextClass} text-[#f1f9ff]`}>
+              Our one-stop, full-service IT asset disposition and recovery
+              helps our clients through strict data security protocols and full
+              compliance with all environmental regulations.
             </p>
             <a href="#contact" className={primaryButtonClass}>
               Contact Us Today
@@ -716,7 +786,7 @@ function App() {
           <div className={`${containerClass} grid grid-cols-[0.92fr_1.08fr] gap-8 max-[920px]:grid-cols-1`}>
             <div className="rounded-2xl p-8 bg-linear-to-br from-lime-50/50 to-lime-50/30">
               <p className={sectionKickerClass}>Contact</p>
-              <h2 className={sectionTitleClass}>Let&apos;s Plan Your Recycling Program</h2>
+              <h2 className={sectionTitleClass}>Contact Us</h2>
               <p className={bodyTextClass}>
                 Mail us or call us for pickup scheduling, compliance support,
                 and enterprise e-waste lifecycle planning.
@@ -726,6 +796,10 @@ function App() {
                 <p className="inline-flex items-center gap-3 text-[0.95rem] font-semibold text-[#0f172a]">
                   <i className="fa-regular fa-envelope text-lime-600 text-[1.1rem]" aria-hidden="true"></i>
                   info@swastika.co.in
+                </p>
+                <p className="inline-flex items-center gap-3 text-[0.95rem] font-semibold text-[#0f172a]">
+                  <i className="fa-regular fa-envelope text-lime-600 text-[1.1rem]" aria-hidden="true"></i>
+                  sathish.s@swastika.co.in
                 </p>
                 <p className="inline-flex items-center gap-3 text-[0.95rem] font-semibold text-[#0f172a]">
                   <i className="fa-solid fa-phone text-lime-600 text-[1.1rem]" aria-hidden="true"></i>
@@ -776,7 +850,7 @@ function App() {
                   required
                 >
                   <option value="" disabled>
-                    Service Required
+                    Type of Waste / Service Required
                   </option>
                   <option>Electrical & Electronic</option>
                   <option>Hard Disk Shredding</option>
