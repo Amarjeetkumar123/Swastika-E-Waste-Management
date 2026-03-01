@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
-import heroBackgroundImage from "./assets/Recycling-old-Electronics-1024x576.png";
-import heroSideImage from "./assets/robot-with-trash-recycle-symbol-min-scaled-1-1024x569.jpg";
+import heroBackgroundImage from "./assets/photorealistic-earth-planet.jpg";
 import aboutImage from "./assets/Electronics.webp";
 import blogImage from "./assets/Mobile-Phone-Laptop-Battery-Recycling.jpg";
 import serviceElectricalImage from "./assets/Electronics2.webp";
@@ -13,6 +12,10 @@ import serviceDoorImage from "./assets/commercial-garbage-bin-1024x683.jpg";
 import cablesImage from "./assets/Electronics2.webp";
 import doorRecyclingImage from "./assets/commercial-garbage-bin-1024x683.jpg";
 import corporateBackgroundImage from "./assets/Responsible-E-Waste-Management.jpeg";
+import municipalImage from "./assets/MUNICIPAL.png";
+import hazardousImage from "./assets/HAZARDOUS.png";
+import recyclingImage from "./assets/RECYCLING.png";
+import biomedicalImage from "./assets/BIOMEDICAL.png";
 
 const FALLBACK_IMAGE = aboutImage;
 
@@ -26,22 +29,22 @@ const navLinks = [
 
 const categoryTiles = [
   {
-    icon: "fa-solid fa-city",
+    image: municipalImage,
     title: "MUNICIPAL",
     tagline: "'Clean India' with smart solutions",
   },
   {
-    icon: "fa-solid fa-triangle-exclamation",
+    image: hazardousImage,
     title: "HAZARDOUS",
     tagline: "Logistics and processing",
   },
   {
-    icon: "fa-solid fa-recycle",
+    image: recyclingImage,
     title: "RECYCLING",
     tagline: "Strides towards sustainability",
   },
   {
-    icon: "fa-solid fa-house-medical",
+    image: biomedicalImage,
     title: "BIOMEDICAL",
     tagline: "Safe transportation and disposal",
   },
@@ -148,6 +151,24 @@ const processSteps = [
   {
     title: "Reporting & Certification",
     text: "Transparent reporting and compliance-ready documentation for clients.",
+  },
+];
+
+const heroHighlights = [
+  {
+    icon: "fa-solid fa-shield-halved",
+    title: "Certified Security",
+    text: "End-to-end secure data destruction for enterprise devices.",
+  },
+  {
+    icon: "fa-solid fa-truck-fast",
+    title: "Fast Collection",
+    text: "Scheduled pickup for offices, campuses, and housing societies.",
+  },
+  {
+    icon: "fa-solid fa-leaf",
+    title: "Eco Compliance",
+    text: "Audited recycling and documentation aligned with regulations.",
   },
 ];
 
@@ -319,15 +340,17 @@ function App() {
           id="home"
           className="hero"
           style={{
-            backgroundImage: `linear-gradient(138deg, rgba(23, 48, 24, 0.6), rgba(13, 20, 13, 0.47)), url(${heroBackgroundImage})`,
+            backgroundImage: `radial-gradient(circle at 14% 18%, rgba(14, 165, 233, 0.18) 0%, transparent 36%), radial-gradient(circle at 86% 80%, rgba(20, 184, 166, 0.16) 0%, transparent 34%), linear-gradient(132deg, rgba(8, 26, 52, 0.52) 0%, rgba(14, 53, 95, 0.42) 52%, rgba(15, 118, 110, 0.42) 100%), url(${heroBackgroundImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         >
           <div className="container hero-grid">
             <div className="hero-content">
               <p className="hero-tag">SWASTIKA - Recycle Today, Protect Tomorrow</p>
               <h1>
-                Give Your E-Waste a Second Life - Recycle for a Sustainable
-                Tomorrow!
+                Give Your E-Waste a Second Life - Recycle for a Sustainable Tomorrow!
               </h1>
               <p className="hero-subtitle">
                 Responsible E-Waste Management for a Greener Future!
@@ -340,15 +363,15 @@ function App() {
                   Learn More
                 </a>
               </div>
-            </div>
-
-            <div className="hero-image-card">
-              <img
-                src={heroSideImage}
-                alt="Swastika e-waste team sorting electronic scrap"
-                loading="eager"
-                onError={handleImageError}
-              />
+              <div className="hero-highlights">
+                {heroHighlights.map((item) => (
+                  <article key={item.title} className="hero-highlight-card">
+                    <i className={item.icon} aria-hidden="true"></i>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                  </article>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -388,7 +411,12 @@ function App() {
             <div className="tile-grid">
               {categoryTiles.map((tile) => (
                 <article key={tile.title} className="tile-card">
-                  <i className={tile.icon} aria-hidden="true"></i>
+                  <img
+                    src={tile.image}
+                    alt={tile.title}
+                    loading="lazy"
+                    onError={handleImageError}
+                  />
                   <h3>{tile.title}</h3>
                   <p>{tile.tagline}</p>
                 </article>
@@ -562,7 +590,7 @@ function App() {
         <section
           className="corporate-section reveal"
           style={{
-            backgroundImage: `linear-gradient(rgba(16, 25, 16, 0.72), rgba(16, 25, 16, 0.72)), url(${corporateBackgroundImage})`,
+            backgroundImage: `linear-gradient(128deg, rgba(11, 32, 56, 0.78), rgba(15, 108, 101, 0.74)), url(${corporateBackgroundImage})`,
           }}
         >
           <div className="container corporate-content">
