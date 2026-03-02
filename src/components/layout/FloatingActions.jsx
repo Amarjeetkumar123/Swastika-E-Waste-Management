@@ -9,7 +9,7 @@ function FloatingActions({ company }) {
         aria-label="Call now"
         title="Call now"
       >
-        <Icon name="phone" className="text-[22px]" />
+        <Icon name="phone" className="text-[22px] text-white" />
         <span className="sr-only">Call</span>
       </a>
       <a
@@ -20,7 +20,7 @@ function FloatingActions({ company }) {
         aria-label="Chat on WhatsApp"
         title="Chat on WhatsApp"
       >
-        <Icon name="whatsapp" className="text-[22px]" />
+        <Icon name="whatsapp" className="text-[22px] text-white" />
         <span className="sr-only">WhatsApp</span>
       </a>
     </div>

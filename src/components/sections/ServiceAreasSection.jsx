@@ -1,13 +1,13 @@
 import Container from "../ui/Container";
 import SectionHeader from "../ui/SectionHeader";
-import ImagePlaceholder from "../ui/ImagePlaceholder";
+import BengaluruMap from "../ui/BengaluruMap";
 import Icon from "../ui/Icon";
 
 function ServiceAreasSection({ areas }) {
   return (
     <section className="border-b border-[var(--c-border)] bg-white py-16 sm:py-20">
       <Container>
-        <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-stretch">
           <div className="rounded-2xl border border-[var(--c-border)] bg-[#f7fafe] p-6 shadow-[var(--shadow-sm)] sm:p-7">
             <SectionHeader
               eyebrow="Coverage"
@@ -26,8 +26,8 @@ function ServiceAreasSection({ areas }) {
               ))}
             </ul>
           </div>
-          <div className="rounded-2xl border border-[var(--c-border)] bg-[#f1f6fb] p-5 shadow-[var(--shadow-sm)]">
-            <ImagePlaceholder altText="Karnataka district service coverage map" label="Service Area Image Space" className="m-0" />
+          <div>
+            <BengaluruMap areas={areas} />
           </div>
         </div>
       </Container>

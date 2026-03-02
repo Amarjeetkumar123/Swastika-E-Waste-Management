@@ -24,7 +24,7 @@ function Icon({ name, className = "text-[0.95em]" }) {
 
   return (
     <i
-      className={`${iconClass} inline-flex shrink-0 items-center justify-center leading-none ${className}`}
+      className={`${iconClass} fa-fw inline-flex shrink-0 items-center justify-center align-middle leading-none ${className}`}
       aria-hidden="true"
     ></i>
   );

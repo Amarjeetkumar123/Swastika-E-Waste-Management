@@ -40,22 +40,42 @@ export const siteContent = {
     {
       title: "Warehouse and Factory Scrap Clearance",
       description:
-        "Support for warehouse damage stock, manufacturing leftovers, and bulk factory scrap categories.",
+        "End-to-end support for warehouse damage stock, manufacturing offcuts, and bulk factory clearance requirements.",
+      highlights: [
+        "Ferrous and mixed lot sorting support",
+        "Pickup scheduling across Bengaluru and nearby districts",
+        "Structured communication for procurement teams",
+      ],
     },
     {
       title: "Office and IT Asset Scrap Handling",
       description:
-        "Collection alignment for office electronics, desktops, servers, laptops, panels, and cable scrap.",
+        "Collection alignment for office electronics, desktops, servers, laptops, panels, and cable-related scrap categories.",
+      highlights: [
+        "Suitable for office relocation and upgrade cycles",
+        "Category-level handling for CPU, desktop, server, and laptop lots",
+        "Clear handover flow with documented communication",
+      ],
     },
     {
       title: "Non-Ferrous Recovery Categories",
       description:
-        "Copper, aluminum, brass, bronze, and zinc category support for recurring and lot-based enquiries.",
+        "Copper, aluminium, brass, bronze, and zinc category support for both recurring and lot-based material enquiries.",
+      highlights: [
+        "Focused support for high-value non-ferrous materials",
+        "Wire and cable-linked scrap category coverage",
+        "Responsive enquiry handling for tender timelines",
+      ],
     },
     {
       title: "Industrial and Machinery Lots",
       description:
-        "Machinery, fabrication, plastic, and mixed industrial scrap category coordination.",
+        "Machinery, fabrication, plastic, and mixed industrial scrap coordination for plant and workshop requirements.",
+      highlights: [
+        "Supports shutdown, upgrade, and cleanup lot scenarios",
+        "Practical coordination for heavy and mixed materials",
+        "Aligned approach for industrial procurement communication",
+      ],
     },
   ],
   credentials: [
