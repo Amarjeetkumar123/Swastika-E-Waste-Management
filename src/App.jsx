@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
@@ -49,6 +50,13 @@ function renderPage(currentPath, content) {
 
 function App() {
   const currentPath = normalizePath(window.location.pathname);
+
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [currentPath]);
 
   return (
     <div className="min-h-screen bg-[var(--c-bg)] text-[var(--c-ink)]">
